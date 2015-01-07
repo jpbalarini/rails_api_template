@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.3'
+gem 'rails', '4.2.0'
 
 # Use postgres as the database for Active Record
 gem 'pg'
@@ -15,6 +15,7 @@ gem 'haml'
 gem 'simple_token_authentication', '~> 1.6.0'
 gem 'cancan', '~> 1.6.10'
 gem 'devise-async', '~>0.9.0'
+gem 'koala', '~> 1.10.0rc'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -43,9 +44,9 @@ end
 
 # Code analysis tools
 
-gem 'reek'
+gem 'reek', '~> 1.3.6'
 gem 'rails_best_practices'
-gem 'rubocop'
+gem 'rubocop', '~> 0.19.0'
 
 gem 'rails_12factor', group: :production
 

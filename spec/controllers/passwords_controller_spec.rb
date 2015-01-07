@@ -50,7 +50,7 @@ describe Api::V1::PasswordsController do
         format: 'json'
       parsed_response = JSON.parse(response.body)
       expect(parsed_response['success']).to eq false
-      ActionMailer::Base.deliveries.count.should == 0
+      expect(ActionMailer::Base.deliveries.count).to eq 0
     end
 
     # reset_password_token is harcoded to match the encryption of the one stored on the db

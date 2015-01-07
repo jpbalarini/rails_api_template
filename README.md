@@ -2,24 +2,40 @@ API Template
 ==============
 
 Template API project with simple token authentication and devise. Every request must be signed with an authentication token header (X-USER-TOKEN).
+
 If the user was registered via email, an X-USER-EMAIL header with the user's email must be provided.
+
 If the user was registered via facebook an X-USER-FACEBOOK header with the facebook id must be provided.
+
 You can use params instead of headers.
 
 1.  Clone this repo
 2.  Create your .ruby-version file
 3.  Create your database.yml file
 4.  Run:
-```
-bundle install
-rake db:create
-rake db:migrate
-RAILS_ENV=test rake db:migrate
-```
+
+  ```
+  bundle install
+  rake db:create
+  rake db:migrate
+  RAILS_ENV=test rake db:migrate
+  ```
 5. Start your server
+
+  ```
+  rails s
+  ```
+
+For code analisys run:
 ```
-rails s
+rake code_analysis
 ```
+
+You can run your tests using:
+```
+rspec
+```
+
 
 Example requests:
 
