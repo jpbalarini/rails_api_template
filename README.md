@@ -11,7 +11,7 @@ You can use params instead of headers.
 
 1.  Clone this repo
 2.  Create your .ruby-version file
-3.  Create your database.yml file
+3.  Create your config/database.yml file
 4.  Run:
 
   ```
